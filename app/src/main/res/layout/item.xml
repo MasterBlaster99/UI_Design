@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="176dp"
+    android:layout_height="112dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@color/white">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <View
+        android:id="@+id/view"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:background="@drawable/gradient_background7"
+        app:layout_constraintBottom_toBottomOf="@id/constLayout"
+        app:layout_constraintRight_toRightOf="parent">
+    </View>
+        <View
+            android:layout_width="84dp"
+            android:layout_height="82dp"
+            android:background="@drawable/ic_ellipse_9"
+            app:layout_constraintTop_toTopOf="@id/view"
+            app:layout_constraintLeft_toLeftOf="@id/view"></View>
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Session 1"
+        android:layout_marginTop="28dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@id/view"
+        app:layout_constraintLeft_toLeftOf="@id/view"
+        app:layout_constraintRight_toRightOf="@id/view"
+        android:textSize="18sp"></TextView>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/ic_greater"
+            app:layout_constraintTop_toBottomOf="@id/text"
+            android:layout_marginTop="10dp"
+            app:layout_constraintRight_toRightOf="@id/view"
+            app:layout_constraintLeft_toLeftOf="@id/view"></ImageView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
